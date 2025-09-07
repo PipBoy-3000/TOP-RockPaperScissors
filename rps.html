@@ -9,12 +9,12 @@
     <body>
         <!--Title; centered-->
         <div id="div_title"> 
-            <h1 style="display: flex; justify-content: space-around;">Rock Paper Scissors</h1>
+            <h1 style="display: flex; justify-content: space-around;">Title</h1>
         </div>
 
-        <div id ="div_buttons; display: flex; justify-content: space-around">
+        <div id ="div_buttons" style=" display: flex; justify-content: flex-start;">
             
-        <ul id="ul_buttons" style="list-style-type: none; display: flex;">
+        <ul id="ul_buttons" style="list-style-type: none; display: flex;  column-gap: 10px;">
             <li><button id="btn_rock">ROCK</button></li>
             <li><button id="btn_paper">PAPER</button></li>
             <li><button id="btn_scissors">SCISSORS</button></li>
@@ -22,18 +22,45 @@
 
         </div>
 
-        <div id="div_moves"; style="display: flex; justify-content: space-around;">
-            <div id="div_playerMove">Player Move</div>
+        <div id="div_moves"; style="display: flex; justify-content: space-around; align-items: center;">
+            <div id="div_playerArea" >
+                <div id="playerTitle" style="display: flex; flex-direction:row; justify-content: space-between; column-gap: 10px; ">
+                    
+                    <div>Player</div>
+                    <div id="div_playerScore">
+
+                    </div>
+                </div>
+                    
+
+
+                <div id="div_playerMove"></div>
+
+            </div>
+            
 
             <div id="div_moveMiddle">X</div>
 
-            <div id="div_compMove">PC Move</div>
 
+            <div id="div_compArea">
+                <div id="compTitle" style="display: flex; flex-direction:row; justify-content: space-between; column-gap: 10px; ">
+                    <div>Computer</div>
+                    <div id="div_compScore">
 
+                    </div>
+
+                </div>
+                
+                <div id="div_compMove"></div>
+
+            </div>
+            
+
+            
         </div>
 
-        <div id="div_result">
-
+        <div id="div_result"; style="display: flex; flex-direction: column; justify-content: space-evenly;">
+            <p style="display: flex; justify-content: space-evenly;">Results:</p>
 
         </div>
     </body>
